@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    font-family: 'Balsamiq Sans', cursive;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2%;
+    background-color: #f3fcfd26;
+    /* box-shadow: white 1px 1px 5px; */
+    color: white;
+}
+header>div{
+    display: flex;
+    width: 11%;
+    justify-content: space-around;
+    align-items: center;
+}
+#logo{
+    background-image: url(../img/step-logo.svg);
+    height: 7vh;
+    width: 31%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    width: 70%;
+
+}
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    height: 8vh;
+    margin: 1%;
+    padding: 0;
+    align-items: center;
+}
+nav ul li{
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    list-style: none;
+    width: 20%;
+}
+
+/* banner */
+#banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/banner.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    filter: contrast(0.6);
+    background-size: cover;
+    z-index: -1;
+}
+#banner{
+    height: 90vh;
+    text-align: center;
+}
+#banner button{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 60vh;
+    border-radius: 20px;
+    padding: 10px 50px;
+    font-size: 20px;
+    background: #000000d1;
+    color: white;
+    border: none;
+    box-shadow: #496D7A 0px 1px 8px;
+    cursor:pointer;
+}
+#banner button:hover{
+    background: #000000;
+}
+/* serviÃƒÂ§os */
+#servicos{
+    height: 100vh;
+    padding: 2% 2%;
+    text-align: center;
+}
+#servicos h3{
+    font-size: 40px;
+    font-weight: bold;
+    margin: 2% 0;
+}
+#servicos>div{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.servicos{
+    width: 30%;
+    text-align: center;
+    margin-top:2%;
+    background: #8f93961f;
+    border-radius: 20px;
+    padding: 2% 0;
+}
+.servicos p{
+    font-weight: bold;
+}
+.servicos div{
+    background-size: cover;
+    width: 43%;
+    height: 20vh;
+    margin: 6% auto;
+}
+.servicos button{
+    border-radius: 20px;
+    background: #000000d1;
+    color: white;
+    border: none;
+    box-shadow: #496D7A 0px 1px 8px;
+    cursor:pointer;
+    padding: 5px 9px;
+    font-size: 18px;
+}
+.fa{
+    font-size: 25px;
+}
+/* contato */
+#contato{
+    background-color: #00000061;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+}
+#contato h3{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+#contato form{
+    width: 46%;
+    margin: auto auto;
+    background: #060606cc;
+    font-size: 20px;
+    padding: 1% 10.5%;
+    border-radius: 20px;
+    color: white;
+}
+#contato form>div{
+    display: flex;
+    justify-content: space-between;
+}
+form input, form textarea, form select{
+    border-radius: 20px;
+}
+form input, form select{
+    width: 200px;
+}
+form .campo{
+    display: flex;
+    flex-direction: column;
+    margin: 2% 0;
+}
+form button{
+    display: block;
+    margin: 0 auto;
+    padding: 3%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+form button .fa:hover{
+    color: gray;
+}
+/* footer */
+footer{
+    padding: 2% 0;
+}
+footer p{
+    text-align: center;
+}
+footer .fa{
+    font-size: 15px;
+}
